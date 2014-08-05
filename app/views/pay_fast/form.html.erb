@@ -1,0 +1,10 @@
+<%= payment_service_for '1', '10001446', amount: 123,
+                                         service: :pay_fast,
+                                         credential2: '92y1su6e107fu',
+                                         credential3: 'nashby' do |s| %>
+  <% s.item_name 'Name' %>
+  <% s.return_url 'http://6k6i.t.proxylocal.com/pay_fast/success' %>
+  <% s.cancel_url 'http://6k6i.t.proxylocal.com/pay_fast/cancel' %>
+  <% s.notify_url 'http://6k6i.t.proxylocal.com/pay_fast/paid' %>
+  <%= submit_tag "Submit" %>
+<% end %>
